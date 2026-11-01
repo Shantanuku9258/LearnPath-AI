@@ -1,0 +1,20 @@
+=================== EVALUATION REPORT (CHRONOLOGICAL TEST SLICE) ===================
+Profile: full | Test Cutoff Timestamp: 2026-09-16 10:08:32.319266
+Eligible Learners: 9502 | Cold Start Learners: 1452
+Test Attempts Observed: 47613
+------------------------------------------------------------------------------------
+Strategy: rule-v1
+  Coverage: 1.0000 (9502/9502)
+  Cold-Start Coverage: 1.0000
+  Precision@1: 0.1050 | Recall@1: 0.0253 | NDCG@1: 0.1050
+  Precision@3: 0.0829 | Recall@3: 0.0597 | NDCG@3: 0.1022
+  Precision@5: 0.0563 | Recall@5: 0.0619 | NDCG@5: 0.0894
+------------------------------------------------------------------------------------
+Strategy: ml-v1
+  Coverage: 1.0000 (9502/9502)
+  Cold-Start Coverage: 1.0000
+  Precision@1: 0.1117 | Recall@1: 0.0285 | NDCG@1: 0.1117
+  Precision@3: 0.0842 | Recall@3: 0.0603 | NDCG@3: 0.1052
+  Precision@5: 0.0571 | Recall@5: 0.0622 | NDCG@5: 0.0919
+------------------------------------------------------------------------------------
+status=evaluated

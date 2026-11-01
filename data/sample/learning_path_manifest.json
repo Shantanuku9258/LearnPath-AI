@@ -1,0 +1,23 @@
+{
+  "as_of_timestamp": "2026-10-22 23:16:21.281661",
+  "checksums": {
+    "learning_path_items.csv": "47c4523b7b7d109420aa295e9e7ee6d1c9b683ca78237715642f4333e4233f0a",
+    "learning_paths.csv": "892d165240a782b2672a150cf37a28592a27994c87cc3c0842d7e0e26442948b"
+  },
+  "checksums_sha256": {
+    "learning_path_items.csv": "47c4523b7b7d109420aa295e9e7ee6d1c9b683ca78237715642f4333e4233f0a",
+    "learning_paths.csv": "892d165240a782b2672a150cf37a28592a27994c87cc3c0842d7e0e26442948b"
+  },
+  "dataset_profile": "dev",
+  "files": [
+    "learning_paths.csv",
+    "learning_path_items.csv"
+  ],
+  "generator_version": "path-v1",
+  "row_counts": {
+    "learning_path_items.csv": 348,
+    "learning_paths.csv": 97
+  },
+  "seed": 20261022,
+  "timestamp_policy": "generated_at / activated_at / planned_at all equal the as_of_timestamp used for path generation. This is the Phase 6 recommendation cutoff: no attempt, assessment or mastery information after that instant is used. All timestamps are deterministic UTC."
+}

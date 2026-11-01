@@ -1,0 +1,24 @@
+{
+  "calendar_end": "2026-10-22T23:59:59Z",
+  "calendar_start": "2024-01-01T00:00:00Z",
+  "checksums": {
+    "assessment_results.csv": "de1d2bdefcb73f4befff3cb2561db90a8bb12f32be491b3324e4ef729831d19b",
+    "attempts.csv": "048acef92719a870826a2dbe91facde6f460b700510c7fbd80f185d28282f0ab"
+  },
+  "checksums_sha256": {
+    "assessment_results.csv": "de1d2bdefcb73f4befff3cb2561db90a8bb12f32be491b3324e4ef729831d19b",
+    "attempts.csv": "048acef92719a870826a2dbe91facde6f460b700510c7fbd80f185d28282f0ab"
+  },
+  "dataset_profile": "full",
+  "files": [
+    "attempts.csv",
+    "assessment_results.csv"
+  ],
+  "generator_version": "activity-v1",
+  "row_counts": {
+    "assessment_results.csv": 317419,
+    "attempts.csv": 500000
+  },
+  "seed": 20261022,
+  "timestamp_policy": "Attempt timestamps are UTC instants strictly >= learner registration date (effective_from/created_at) and within [calendar_start, calendar_end] sampled using numpy.random.Generator with configured seed. Submitted timestamps are strictly >= started_at and scored_at >= submitted_at."
+}

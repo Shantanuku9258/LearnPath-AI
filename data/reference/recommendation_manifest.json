@@ -1,0 +1,19 @@
+{
+  "as_of_timestamp": "2026-10-22 23:59:59.000000",
+  "checksums": {
+    "recommendations.csv": "5a75008ac3fdef931f842c3fa42bd7f1d826b17ef1a8bfe1419e5f06773a6ad1"
+  },
+  "checksums_sha256": {
+    "recommendations.csv": "5a75008ac3fdef931f842c3fa42bd7f1d826b17ef1a8bfe1419e5f06773a6ad1"
+  },
+  "dataset_profile": "full",
+  "files": [
+    "recommendations.csv"
+  ],
+  "generator_version": "rule-v1",
+  "row_counts": {
+    "recommendations.csv": 20698
+  },
+  "seed": 20261022,
+  "timestamp_policy": "as_of_timestamp represents the feature cutoff point. recommended_at represents the issuance time (recommended_at >= as_of_timestamp). All timestamps are deterministic UTC."
+}

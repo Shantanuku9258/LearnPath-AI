@@ -1,0 +1,91 @@
+{
+  "dev": {
+    "test_cutoff": "2026-09-18 10:26:56.803198",
+    "eligible_learners": 95,
+    "cold_start_learners": 14,
+    "test_attempts_observed": 469,
+    "rule-v1": {
+      "coverage": 0.5053,
+      "cold_start_coverage": 0.7143,
+      "precision_at_k": {
+        "1": 0.1923,
+        "3": 0.0641,
+        "5": 0.0385
+      },
+      "recall_at_k": {
+        "1": 0.0847,
+        "3": 0.0847,
+        "5": 0.0847
+      },
+      "ndcg_at_k": {
+        "1": 0.1923,
+        "3": 0.1236,
+        "5": 0.1111
+      }
+    },
+    "ml-v1": {
+      "coverage": 0.5053,
+      "cold_start_coverage": 0.7143,
+      "precision_at_k": {
+        "1": 0.1923,
+        "3": 0.0641,
+        "5": 0.0385
+      },
+      "recall_at_k": {
+        "1": 0.0847,
+        "3": 0.0847,
+        "5": 0.0847
+      },
+      "ndcg_at_k": {
+        "1": 0.1923,
+        "3": 0.1236,
+        "5": 0.1111
+      }
+    },
+    "divergence_explanation": "Candidate sets in dev slice have size=1 per learner due to prerequisite gating, causing identical rankings."
+  },
+  "full": {
+    "test_cutoff": "2026-09-19 04:22:11.479946",
+    "eligible_learners": 9501,
+    "cold_start_learners": 1416,
+    "test_attempts_observed": 47623,
+    "rule-v1": {
+      "coverage": 0.0539,
+      "cold_start_coverage": 0.0537,
+      "precision_at_k": {
+        "1": 0.0066,
+        "3": 0.0022,
+        "5": 0.0013
+      },
+      "recall_at_k": {
+        "1": 0.0022,
+        "3": 0.0022,
+        "5": 0.0022
+      },
+      "ndcg_at_k": {
+        "1": 0.0066,
+        "3": 0.0038,
+        "5": 0.0033
+      }
+    },
+    "ml-v1": {
+      "coverage": 0.0539,
+      "cold_start_coverage": 0.0537,
+      "precision_at_k": {
+        "1": 0.0066,
+        "3": 0.0022,
+        "5": 0.0013
+      },
+      "recall_at_k": {
+        "1": 0.0022,
+        "3": 0.0022,
+        "5": 0.0022
+      },
+      "ndcg_at_k": {
+        "1": 0.0066,
+        "3": 0.0038,
+        "5": 0.0033
+      }
+    }
+  }
+}

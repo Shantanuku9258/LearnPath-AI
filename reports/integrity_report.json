@@ -1,0 +1,32 @@
+{
+  "profile_dev": {
+    "learners": 100,
+    "courses": 8,
+    "skills": 50,
+    "skill_prerequisites": 94,
+    "content_items": 100,
+    "content_skills": 244,
+    "attempts": 5000,
+    "assessment_results": 3122,
+    "mastery_snapshots": 852,
+    "recommendations": 70,
+    "learning_paths": 56,
+    "learning_path_items": 70,
+    "status": "verified_valid"
+  },
+  "profile_full": {
+    "learners": 10000,
+    "courses": 40,
+    "skills": 500,
+    "skill_prerequisites": 1441,
+    "content_items": 2000,
+    "content_skills": 4998,
+    "attempts": 500000,
+    "assessment_results": 317481,
+    "mastery_snapshots": 307529,
+    "recommendations": 863,
+    "learning_paths": 797,
+    "learning_path_items": 863,
+    "status": "verified_valid"
+  }
+}

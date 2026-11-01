@@ -1,0 +1,40 @@
+{
+  "calendar_end": "2026-10-22T23:59:59Z",
+  "calendar_start": "2024-01-01T00:00:00Z",
+  "checksums": {
+    "content_items.csv": "695b70e5aa920acc17938d7e78f61f7558b5c54451ee16daccf62465e97fda80",
+    "content_skills.csv": "6f36e848798c7ff4ca9551377f9897ad4052521f84209f2384233653b70043e1",
+    "courses.csv": "4f224a89598afbb8e216f8b8ca673f0b21d975bfc8ebf93cabaf17f9a48008ba",
+    "learners.csv": "44e0782d96d17812dff1ee96121ebf3b8c44635595ae8e25da027f5850e1f2e9",
+    "skill_prerequisites.csv": "1801f805aed259d01cc6985033f64edbeed840ff7f11d1039adf24d850d1c764",
+    "skills.csv": "8e373a881cf040939710e1f014821be24e1f07abe1153c5ad2beb1a9c1cd493d"
+  },
+  "checksums_sha256": {
+    "content_items.csv": "695b70e5aa920acc17938d7e78f61f7558b5c54451ee16daccf62465e97fda80",
+    "content_skills.csv": "6f36e848798c7ff4ca9551377f9897ad4052521f84209f2384233653b70043e1",
+    "courses.csv": "4f224a89598afbb8e216f8b8ca673f0b21d975bfc8ebf93cabaf17f9a48008ba",
+    "learners.csv": "44e0782d96d17812dff1ee96121ebf3b8c44635595ae8e25da027f5850e1f2e9",
+    "skill_prerequisites.csv": "1801f805aed259d01cc6985033f64edbeed840ff7f11d1039adf24d850d1c764",
+    "skills.csv": "8e373a881cf040939710e1f014821be24e1f07abe1153c5ad2beb1a9c1cd493d"
+  },
+  "dataset_profile": "dev",
+  "files": [
+    "courses.csv",
+    "learners.csv",
+    "skills.csv",
+    "skill_prerequisites.csv",
+    "content_items.csv",
+    "content_skills.csv"
+  ],
+  "generator_version": "master-v1",
+  "row_counts": {
+    "content_items.csv": 100,
+    "content_skills.csv": 213,
+    "courses.csv": 8,
+    "learners.csv": 100,
+    "skill_prerequisites.csv": 94,
+    "skills.csv": 50
+  },
+  "seed": 20261022,
+  "timestamp_policy": "Record timestamps are UTC instants sampled from [calendar_start, calendar_end] using numpy.random.Generator with the configured seed. Wall-clock time is not used."
+}

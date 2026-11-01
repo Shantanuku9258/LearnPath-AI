@@ -1,0 +1,30 @@
+{
+  "checksums_sha256": {
+    "attempt_timestamp_orders.csv": "619891f163b445a2f29a6761781a4c12796c99a267d4f72136ef9acf0e1e2def",
+    "content_missing_skills.csv": "675de7b158fed55480ac8d8c847272edc3b9e7eed2c1b396b6dadd6708759b85",
+    "data_quality_issues.csv": "fbd9fcae0fd81c7e193728b602714c6f9c23213efffd4a4091e6a0b2dffaa8d1",
+    "mastery_future_attempts.csv": "183b6085acf7381474e8e9cca4163d84eb769654ebad5456cdf50a65432b4478",
+    "path_loop_no_progress.csv": "a3295a0913aab14e9f67f82cf7077799e067e2b0dc5778daa195be3442afbe9c",
+    "rec_prereq_violations.csv": "c60720c865bee5ebffd86a8bb60ca39279f7721e3d0e9ac6e2ce85cc34aa02a8"
+  },
+  "dataset_profile": "dev",
+  "files": [
+    "rec_prereq_violations.csv",
+    "attempt_timestamp_orders.csv",
+    "content_missing_skills.csv",
+    "mastery_future_attempts.csv",
+    "path_loop_no_progress.csv",
+    "data_quality_issues.csv"
+  ],
+  "generated_at": "2026-10-30 10:05:46.872228",
+  "generator_version": "quality-v1",
+  "row_counts": {
+    "attempt_timestamp_orders.csv": 5,
+    "content_missing_skills.csv": 5,
+    "data_quality_issues.csv": 25,
+    "mastery_future_attempts.csv": 5,
+    "path_loop_no_progress.csv": 5,
+    "rec_prereq_violations.csv": 5
+  },
+  "seed": 20261022
+}

@@ -1,0 +1,27 @@
+LearnPath AI — Data Quality Report
+==================================================
+Profile       : dev
+Generated at  : 2026-10-30 10:05:46.963932
+
+Inspection Summary
+------------------------------
+  Total inspected  : 25
+  Total valid      : 0
+  Total anomalous  : 25
+
+Count by Anomaly Type
+------------------------------
+  ATTEMPT_TIMESTAMP_ORDER                  5
+  CONTENT_MISSING_SKILL                    5
+  MASTERY_FUTURE_ATTEMPT                   5
+  PATH_LOOP_NO_PROGRESS                    5
+  REC_PREREQ_VIOLATION                     5
+
+Count by Severity
+------------------------------
+  critical   10
+  high       10
+  medium     5
+  low        0
+
+Detection status: complete

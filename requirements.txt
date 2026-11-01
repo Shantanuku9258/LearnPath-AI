@@ -1,0 +1,21 @@
+# LearnPath AI dependencies. Install into .venv after MySQL 8.4 is available
+# for live database work. Unit tests only need SQLAlchemy, PyMySQL,
+# python-dotenv, cryptography, and pytest.
+
+# Data processing (generation and evaluation in later phases)
+pandas>=2.2,<3.0
+numpy>=1.26,<3.0
+
+# Database — MySQL 8.4 via SQLAlchemy 2.x + PyMySQL. SQLite is not the primary store.
+SQLAlchemy>=2.0,<3.0
+PyMySQL>=1.1,<2.0
+cryptography>=42.0,<47.0
+
+# Machine learning (comparison against the rule-based baseline; not used in Phase 1)
+scikit-learn>=1.5,<2.0
+
+# Configuration
+python-dotenv>=1.0,<2.0
+
+# Testing
+pytest>=8.0,<9.0

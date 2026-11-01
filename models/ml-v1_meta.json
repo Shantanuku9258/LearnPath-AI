@@ -1,0 +1,33 @@
+{
+  "model_version": "ml-v1",
+  "trained_at": "2026-10-31 07:04:56.501420",
+  "feature_names": [
+    "primary_skill_mastery",
+    "content_difficulty",
+    "diff_suitability",
+    "primary_skill_weight",
+    "learner_prior_attempts_on_content",
+    "learner_prior_passes_on_content",
+    "learner_overall_prior_attempts",
+    "learner_overall_prior_pass_rate"
+  ],
+  "metrics": {
+    "accuracy": 0.8072805139186295,
+    "precision": 0.8591549295774648,
+    "recall": 0.8840579710144928,
+    "f1": 0.8714285714285714,
+    "roc_auc": 0.863031598954621,
+    "log_loss": 0.4035639624472561
+  },
+  "coefficients": {
+    "primary_skill_mastery": 1.996427358247498,
+    "content_difficulty": -0.7293257263580998,
+    "diff_suitability": 1.684082617543368,
+    "primary_skill_weight": 0.13105672915090896,
+    "learner_prior_attempts_on_content": 0.03548308159106162,
+    "learner_prior_passes_on_content": -0.02541363209579429,
+    "learner_overall_prior_attempts": -0.004157214415392007,
+    "learner_overall_prior_pass_rate": 1.3914305508670812
+  },
+  "intercept": 0.24226934580859547
+}

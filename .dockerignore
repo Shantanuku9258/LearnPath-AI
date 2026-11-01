@@ -1,0 +1,50 @@
+# Git & IDE
+.git/
+.gitignore
+.idea/
+.vscode/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache & build
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Local sensitive files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Backups and temporary files
+backups/
+tmp/
+temp/
+*.tmp
+*.log
+*.pid
+
+# Evaluation / test text outputs
+pytest_full.txt
+pytest_output.txt
+pytest_verbose.txt
+update_ai.py
+
+# Local MySQL and database files
+*.sql.gz
+*.dump
+
+# Local environment backups
+.env.*.bak
+.env.*.backup

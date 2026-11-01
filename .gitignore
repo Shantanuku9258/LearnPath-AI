@@ -1,0 +1,98 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets and local environment
+.env
+.env.local
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter / notebooks (if added later)
+.ipynb_checkpoints/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Runtime and temporary files
+tmp/
+temp/
+*.tmp
+*.log
+*.pid
+
+# Generated full-scale datasets (keep sample/ and documented fixtures)
+data/input/*.csv
+data/input/*.json
+data/output/*.csv
+data/output/*.json
+data/output/*.sql
+data/quarantine/*.csv
+data/quarantine/*.json
+data/ground_truth/*.csv
+data/ground_truth/*.json
+!data/**/.gitkeep
+!data/**/README.md
+
+# Reports generated at runtime (keep placeholders)
+reports/*.csv
+reports/*.json
+reports/*.html
+reports/*.md
+!reports/README.md
+!reports/.gitkeep
+
+# MySQL dumps and local DB artifacts
+*.sql.gz
+*.dump
+!schemas/*.sql
+
+# Submission cleanup
+backups/
+pytest_*.txt
+update_ai.py
+models/*backup*
+
+# Include required challenge ground truth
+!data/ground_truth/ground_truth_anomalies.csv
+
+# Include generated quarantine evidence
+!data/quarantine/dev/*.csv
+!data/quarantine/dev/*.json
+
+# Include final verification reports
+!reports/integrity_report.json
+!reports/quality_report_dev.csv
+!reports/quality_report_dev.json
+!reports/recommendation_metrics.json
+

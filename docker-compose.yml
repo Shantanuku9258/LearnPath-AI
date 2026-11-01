@@ -1,0 +1,17 @@
+services:
+  learnpath-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: learnpath-ai:latest
+    container_name: learnpath-ai-app
+    environment:
+      LEARNPATH_ENV: production
+      LEARNPATH_TZ: UTC
+      LEARNPATH_LOG_LEVEL: INFO
+      LEARNPATH_SEED: "20261022"
+      LEARNPATH_DATASET_PROFILE: dev
+      LEARNPATH_MYSQL_IT: "0"
+    volumes:
+      - ./reports:/app/reports
+    command: ["evaluate", "compare", "--profile", "dev"]

@@ -1,0 +1,127 @@
+{
+  "project": {
+    "name": "LearnPath AI",
+    "package": "learnpath_ai",
+    "version": "0.1.0",
+    "description": "Intelligent learning activity recommendation system",
+    "timezone": "UTC"
+  },
+  "reproducibility": {
+    "default_seed": 20261022,
+    "id_zero_padding": 6,
+    "id_prefixes": {
+      "learner": "LRN",
+      "course": "CRS",
+      "skill": "SKL",
+      "content": "CNT",
+      "attempt": "ATT",
+      "path": "PATH",
+      "recommendation": "REC",
+      "assessment_result": "RES",
+      "mastery_snapshot": "MST",
+      "recommendation_outcome": "ROC",
+      "event_history": "EVT",
+      "data_quality_issue": "DQI",
+      "learning_path_item": "LPI"
+    }
+  },
+  "dataset_profiles": {
+    "dev": {
+      "learners": 100,
+      "courses": 8,
+      "skills": 50,
+      "content_items": 100,
+      "attempts": 2000,
+      "anomaly_injections_per_type": 5
+    },
+    "full": {
+      "learners": 10000,
+      "courses": 40,
+      "skills": 500,
+      "content_items": 2000,
+      "attempts": 500000,
+      "anomaly_injections_per_type": 50
+    }
+  },
+  "generation": {
+    "calendar_start": "2024-01-01T00:00:00Z",
+    "calendar_end": "2026-10-22T23:59:59Z",
+    "prerequisite_edge_probability": 0.35,
+    "max_prerequisites_per_skill": 3,
+    "cross_domain_prereq_probability": 0.12,
+    "required_edge_ratio": 0.80,
+    "skills_per_content_min": 1,
+    "skills_per_content_max": 4,
+    "content_types": ["video", "article", "quiz", "exercise", "project"],
+    "content_type_weights": [0.30, 0.25, 0.20, 0.15, 0.10],
+    "attempts_per_learner_mean": 50,
+    "pass_score_threshold": 70.0,
+    "master_entities_first": true,
+    "generator_version": "master-v1"
+  },
+  "mastery": {
+    "scale_min": 0.0,
+    "scale_max": 1.0,
+    "pass_threshold": 0.7,
+    "min_prerequisite_mastery": 0.6,
+    "recency_half_life_days": 90,
+    "as_of_must_be_lte_event_time": true
+  },
+  "recommendation": {
+    "k": 5,
+    "engine_versions": ["rule-v1", "ml-v1"],
+    "default_engine": "rule-v1",
+    "reason_codes": [
+      "GAP_PRIMARY_SKILL",
+      "PREREQUISITE_SATISFIED",
+      "DIFFICULTY_MATCH",
+      "RETRY_AFTER_FAIL",
+      "PATH_NEXT_ITEM",
+      "LOW_MASTERY_PRIORITY",
+      "CONTENT_TYPE_ASSESSMENT",
+      "EXCLUDED_PREREQUISITE_VIOLATION",
+      "EXCLUDED_ALREADY_MASTERED",
+      "EXCLUDED_FUTURE_LEAKAGE"
+    ]
+  },
+  "evaluation": {
+    "split_strategy": "chronological",
+    "train_ratio": 0.70,
+    "validation_ratio": 0.15,
+    "test_ratio": 0.15,
+    "precision_k": [1, 3, 5],
+    "recall_k": [1, 3, 5],
+    "leakage_tolerance_seconds": 0,
+    "relevance": {
+      "primary": "skill_improvement",
+      "secondary": "successful_completion",
+      "improved_flag_field": "improved",
+      "completed_flag_field": "completed"
+    }
+  },
+  "anomalies": {
+    "types": [
+      "REC_PREREQ_VIOLATION",
+      "ATTEMPT_TIMESTAMP_ORDER",
+      "CONTENT_MISSING_SKILL",
+      "MASTERY_FUTURE_ATTEMPT",
+      "PATH_LOOP_NO_PROGRESS"
+    ],
+    "quarantine_dir": "data/quarantine",
+    "ground_truth_dir": "data/ground_truth",
+    "never_use_labels_as_features": true
+  },
+  "database": {
+    "engine": "mysql",
+    "version_target": "8.4",
+    "driver": "pymysql",
+    "orm": "sqlalchemy2",
+    "charset": "utf8mb4",
+    "primary_sqlite_forbidden": true
+  },
+  "frontend": {
+    "enabled": false,
+    "optional_later": "streamlit",
+    "cli_first": true
+  }
+}

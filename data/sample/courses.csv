@@ -1,0 +1,9 @@
+course_id,title,domain,difficulty_band,status,published_at,archived_at,created_at,updated_at,effective_from,effective_to
+CRS-000001,Programming Fundamentals: Foundations,Programming Fundamentals,intro,published,2025-03-12 21:35:47.002183,,2025-03-12 21:35:47.002183,2025-03-22 14:23:02.002183,2025-03-12 21:35:47.002183,
+CRS-000002,Data Structures: Foundations,Data Structures,intro,published,2024-06-17 13:38:45.827289,,2024-06-17 13:38:45.827289,2024-06-19 13:31:55.827289,2024-06-17 13:38:45.827289,
+CRS-000003,Databases: Foundations,Databases,intro,published,2024-01-07 09:08:37.745915,,2024-01-07 09:08:37.745915,2024-01-16 18:15:29.745915,2024-01-07 09:08:37.745915,
+CRS-000004,Backend Development: Foundations,Backend Development,intro,published,2025-04-15 12:49:14.450303,,2025-04-15 12:49:14.450303,2025-04-20 10:19:24.450303,2025-04-15 12:49:14.450303,
+CRS-000005,Software Engineering: Foundations,Software Engineering,intro,published,2026-01-20 09:53:36.065255,,2026-01-20 09:53:36.065255,2026-01-24 20:37:07.065255,2026-01-20 09:53:36.065255,
+CRS-000006,Programming Fundamentals: Core Pathway,Programming Fundamentals,core,published,2024-10-08 09:28:20.666055,,2024-10-08 09:28:20.666055,2024-10-22 06:15:10.666055,2024-10-08 09:28:20.666055,
+CRS-000007,Data Structures: Core Pathway,Data Structures,core,published,2026-08-17 23:56:55.390347,,2026-08-17 23:56:55.390347,2026-08-22 02:27:41.390347,2026-08-17 23:56:55.390347,
+CRS-000008,Databases: Core Pathway,Databases,core,published,2026-08-11 08:40:53.755822,,2026-08-11 08:40:53.755822,2026-08-13 06:24:02.755822,2026-08-11 08:40:53.755822,

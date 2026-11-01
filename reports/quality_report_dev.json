@@ -1,0 +1,697 @@
+{
+  "count_by_severity": {
+    "critical": 10,
+    "high": 10,
+    "medium": 5
+  },
+  "count_by_type": {
+    "ATTEMPT_TIMESTAMP_ORDER": 5,
+    "CONTENT_MISSING_SKILL": 5,
+    "MASTERY_FUTURE_ATTEMPT": 5,
+    "PATH_LOOP_NO_PROGRESS": 5,
+    "REC_PREREQ_VIOLATION": 5
+  },
+  "detection_status": "complete",
+  "generated_at": "2026-10-30 10:05:46.963932",
+  "issues": [
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "REC_PREREQ_VIOLATION",
+      "description": "Recommendation REC-000001 for learner LRN-000016 on content CNT-000033 violates prerequisite SKL-000001.",
+      "details": {
+        "content_id": "CNT-000033",
+        "learner_id": "LRN-000016",
+        "missing_prerequisite_skill_id": "SKL-000001",
+        "primary_skill_id": "SKL-000006",
+        "reason": "Learner LRN-000016 was recommended CNT-000033 but has not satisfied prerequisite SKL-000001 required for primary skill SKL-000006."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "REC-000001",
+      "entity_type": "recommendation",
+      "issue_id": "DQI-000001",
+      "reason_code": "PREREQ_NOT_SATISFIED",
+      "severity": "critical",
+      "source_pk": "REC-000001",
+      "source_table": "recommendation"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "REC_PREREQ_VIOLATION",
+      "description": "Recommendation REC-000002 for learner LRN-000099 on content CNT-000046 violates prerequisite SKL-000001.",
+      "details": {
+        "content_id": "CNT-000046",
+        "learner_id": "LRN-000099",
+        "missing_prerequisite_skill_id": "SKL-000001",
+        "primary_skill_id": "SKL-000006",
+        "reason": "Learner LRN-000099 was recommended CNT-000046 but has not satisfied prerequisite SKL-000001 required for primary skill SKL-000006."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "REC-000002",
+      "entity_type": "recommendation",
+      "issue_id": "DQI-000002",
+      "reason_code": "PREREQ_NOT_SATISFIED",
+      "severity": "critical",
+      "source_pk": "REC-000002",
+      "source_table": "recommendation"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "REC_PREREQ_VIOLATION",
+      "description": "Recommendation REC-000003 for learner LRN-000016 on content CNT-000061 violates prerequisite SKL-000015.",
+      "details": {
+        "content_id": "CNT-000061",
+        "learner_id": "LRN-000016",
+        "missing_prerequisite_skill_id": "SKL-000015",
+        "primary_skill_id": "SKL-000040",
+        "reason": "Learner LRN-000016 was recommended CNT-000061 but has not satisfied prerequisite SKL-000015 required for primary skill SKL-000040."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "REC-000003",
+      "entity_type": "recommendation",
+      "issue_id": "DQI-000003",
+      "reason_code": "PREREQ_NOT_SATISFIED",
+      "severity": "critical",
+      "source_pk": "REC-000003",
+      "source_table": "recommendation"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "REC_PREREQ_VIOLATION",
+      "description": "Recommendation REC-000004 for learner LRN-000023 on content CNT-000003 violates prerequisite SKL-000008.",
+      "details": {
+        "content_id": "CNT-000003",
+        "learner_id": "LRN-000023",
+        "missing_prerequisite_skill_id": "SKL-000008",
+        "primary_skill_id": "SKL-000033",
+        "reason": "Learner LRN-000023 was recommended CNT-000003 but has not satisfied prerequisite SKL-000008 required for primary skill SKL-000033."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "REC-000004",
+      "entity_type": "recommendation",
+      "issue_id": "DQI-000004",
+      "reason_code": "PREREQ_NOT_SATISFIED",
+      "severity": "critical",
+      "source_pk": "REC-000004",
+      "source_table": "recommendation"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "REC_PREREQ_VIOLATION",
+      "description": "Recommendation REC-000005 for learner LRN-000073 on content CNT-000002 violates prerequisite SKL-000032.",
+      "details": {
+        "content_id": "CNT-000002",
+        "learner_id": "LRN-000073",
+        "missing_prerequisite_skill_id": "SKL-000032",
+        "primary_skill_id": "SKL-000047",
+        "reason": "Learner LRN-000073 was recommended CNT-000002 but has not satisfied prerequisite SKL-000032 required for primary skill SKL-000047."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "REC-000005",
+      "entity_type": "recommendation",
+      "issue_id": "DQI-000005",
+      "reason_code": "PREREQ_NOT_SATISFIED",
+      "severity": "critical",
+      "source_pk": "REC-000005",
+      "source_table": "recommendation"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "ATTEMPT_TIMESTAMP_ORDER",
+      "description": "Attempt ATT-LRN-000068-000102: submitted_at < started_at (started=2026-08-01 19:49:59.364061, submitted=2026-08-01 18:49:59.364061).",
+      "details": {
+        "attempt_id": "ATT-LRN-000068-000102",
+        "reason": "Attempt ATT-LRN-000068-000102: submitted_at (2026-08-01 18:49:59.364061) is earlier than started_at (2026-08-01 19:49:59.364061).",
+        "started_at": "2026-08-01 19:49:59.364061",
+        "submitted_at": "2026-08-01 18:49:59.364061",
+        "violated_rule": "submitted_at must be >= started_at"
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "ATT-LRN-000068-000102",
+      "entity_type": "attempt",
+      "issue_id": "DQI-000006",
+      "reason_code": "TIMESTAMP_ORDER_VIOLATION",
+      "severity": "high",
+      "source_pk": "ATT-LRN-000068-000102",
+      "source_table": "attempt"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "ATTEMPT_TIMESTAMP_ORDER",
+      "description": "Attempt ATT-LRN-000021-000014: submitted_at < started_at (started=2025-08-11 02:57:46.537077, submitted=2025-08-11 01:57:46.537077).",
+      "details": {
+        "attempt_id": "ATT-LRN-000021-000014",
+        "reason": "Attempt ATT-LRN-000021-000014: submitted_at (2025-08-11 01:57:46.537077) is earlier than started_at (2025-08-11 02:57:46.537077).",
+        "started_at": "2025-08-11 02:57:46.537077",
+        "submitted_at": "2025-08-11 01:57:46.537077",
+        "violated_rule": "submitted_at must be >= started_at"
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "ATT-LRN-000021-000014",
+      "entity_type": "attempt",
+      "issue_id": "DQI-000007",
+      "reason_code": "TIMESTAMP_ORDER_VIOLATION",
+      "severity": "high",
+      "source_pk": "ATT-LRN-000021-000014",
+      "source_table": "attempt"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "ATTEMPT_TIMESTAMP_ORDER",
+      "description": "Attempt ATT-LRN-000093-000191: submitted_at < started_at (started=2026-09-12 21:11:15.682906, submitted=2026-09-12 20:11:15.682906).",
+      "details": {
+        "attempt_id": "ATT-LRN-000093-000191",
+        "reason": "Attempt ATT-LRN-000093-000191: submitted_at (2026-09-12 20:11:15.682906) is earlier than started_at (2026-09-12 21:11:15.682906).",
+        "started_at": "2026-09-12 21:11:15.682906",
+        "submitted_at": "2026-09-12 20:11:15.682906",
+        "violated_rule": "submitted_at must be >= started_at"
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "ATT-LRN-000093-000191",
+      "entity_type": "attempt",
+      "issue_id": "DQI-000008",
+      "reason_code": "TIMESTAMP_ORDER_VIOLATION",
+      "severity": "high",
+      "source_pk": "ATT-LRN-000093-000191",
+      "source_table": "attempt"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "ATTEMPT_TIMESTAMP_ORDER",
+      "description": "Attempt ATT-LRN-000030-000012: submitted_at < started_at (started=2026-07-22 17:15:55.043522, submitted=2026-07-22 16:15:55.043522).",
+      "details": {
+        "attempt_id": "ATT-LRN-000030-000012",
+        "reason": "Attempt ATT-LRN-000030-000012: submitted_at (2026-07-22 16:15:55.043522) is earlier than started_at (2026-07-22 17:15:55.043522).",
+        "started_at": "2026-07-22 17:15:55.043522",
+        "submitted_at": "2026-07-22 16:15:55.043522",
+        "violated_rule": "submitted_at must be >= started_at"
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "ATT-LRN-000030-000012",
+      "entity_type": "attempt",
+      "issue_id": "DQI-000009",
+      "reason_code": "TIMESTAMP_ORDER_VIOLATION",
+      "severity": "high",
+      "source_pk": "ATT-LRN-000030-000012",
+      "source_table": "attempt"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "ATTEMPT_TIMESTAMP_ORDER",
+      "description": "Attempt ATT-LRN-000017-000009: submitted_at < started_at (started=2025-04-30 11:54:41.953751, submitted=2025-04-30 10:54:41.953751).",
+      "details": {
+        "attempt_id": "ATT-LRN-000017-000009",
+        "reason": "Attempt ATT-LRN-000017-000009: submitted_at (2025-04-30 10:54:41.953751) is earlier than started_at (2025-04-30 11:54:41.953751).",
+        "started_at": "2025-04-30 11:54:41.953751",
+        "submitted_at": "2025-04-30 10:54:41.953751",
+        "violated_rule": "submitted_at must be >= started_at"
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "ATT-LRN-000017-000009",
+      "entity_type": "attempt",
+      "issue_id": "DQI-000010",
+      "reason_code": "TIMESTAMP_ORDER_VIOLATION",
+      "severity": "high",
+      "source_pk": "ATT-LRN-000017-000009",
+      "source_table": "attempt"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "CONTENT_MISSING_SKILL",
+      "description": "content_skill mapping for CNT-000089 references skill SKL-999999 which does not exist.",
+      "details": {
+        "content_id": "CNT-000089",
+        "missing_skill_id": "SKL-999999",
+        "reason": "content_skill mapping references skill SKL-999999 which does not exist in the skills table."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "CNT-000089:SKL-999999",
+      "entity_type": "content_skill",
+      "issue_id": "DQI-000011",
+      "reason_code": "BROKEN_FOREIGN_KEY",
+      "severity": "high",
+      "source_pk": "CNT-000089:SKL-999999",
+      "source_table": "content_skill"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "CONTENT_MISSING_SKILL",
+      "description": "content_skill mapping for CNT-000098 references skill SKL-999999 which does not exist.",
+      "details": {
+        "content_id": "CNT-000098",
+        "missing_skill_id": "SKL-999999",
+        "reason": "content_skill mapping references skill SKL-999999 which does not exist in the skills table."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "CNT-000098:SKL-999999",
+      "entity_type": "content_skill",
+      "issue_id": "DQI-000012",
+      "reason_code": "BROKEN_FOREIGN_KEY",
+      "severity": "high",
+      "source_pk": "CNT-000098:SKL-999999",
+      "source_table": "content_skill"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "CONTENT_MISSING_SKILL",
+      "description": "content_skill mapping for CNT-000003 references skill SKL-999999 which does not exist.",
+      "details": {
+        "content_id": "CNT-000003",
+        "missing_skill_id": "SKL-999999",
+        "reason": "content_skill mapping references skill SKL-999999 which does not exist in the skills table."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "CNT-000003:SKL-999999",
+      "entity_type": "content_skill",
+      "issue_id": "DQI-000013",
+      "reason_code": "BROKEN_FOREIGN_KEY",
+      "severity": "high",
+      "source_pk": "CNT-000003:SKL-999999",
+      "source_table": "content_skill"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "CONTENT_MISSING_SKILL",
+      "description": "content_skill mapping for CNT-000060 references skill SKL-999999 which does not exist.",
+      "details": {
+        "content_id": "CNT-000060",
+        "missing_skill_id": "SKL-999999",
+        "reason": "content_skill mapping references skill SKL-999999 which does not exist in the skills table."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "CNT-000060:SKL-999999",
+      "entity_type": "content_skill",
+      "issue_id": "DQI-000014",
+      "reason_code": "BROKEN_FOREIGN_KEY",
+      "severity": "high",
+      "source_pk": "CNT-000060:SKL-999999",
+      "source_table": "content_skill"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "CONTENT_MISSING_SKILL",
+      "description": "content_skill mapping for CNT-000033 references skill SKL-999999 which does not exist.",
+      "details": {
+        "content_id": "CNT-000033",
+        "missing_skill_id": "SKL-999999",
+        "reason": "content_skill mapping references skill SKL-999999 which does not exist in the skills table."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "CNT-000033:SKL-999999",
+      "entity_type": "content_skill",
+      "issue_id": "DQI-000015",
+      "reason_code": "BROKEN_FOREIGN_KEY",
+      "severity": "high",
+      "source_pk": "CNT-000033:SKL-999999",
+      "source_table": "content_skill"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "MASTERY_FUTURE_ATTEMPT",
+      "description": "Mastery as_of 2026-04-12 00:28:30.153938: attempt ATT-LRN-000063-000030 started at 2026-05-12 00:28:30.153938 is AFTER the cutoff \u2014 must be excluded.",
+      "details": {
+        "as_of_timestamp": "2026-04-12 00:28:30.153938",
+        "attempt_id": "ATT-LRN-000063-000030",
+        "attempt_started_at": "2026-05-12 00:28:30.153938",
+        "content_id": "CNT-000047",
+        "learner_id": "LRN-000063",
+        "reason": "Mastery calculation as_of 2026-04-12 00:28:30.153938 would include attempt ATT-LRN-000063-000030 with started_at 2026-05-12 00:28:30.153938, which is AFTER the as_of cutoff (temporal leakage)."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "ATT-LRN-000063-000030",
+      "entity_type": "attempt",
+      "issue_id": "DQI-000016",
+      "reason_code": "TEMPORAL_LEAKAGE",
+      "severity": "critical",
+      "source_pk": "ATT-LRN-000063-000030",
+      "source_table": "attempt"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "MASTERY_FUTURE_ATTEMPT",
+      "description": "Mastery as_of 2025-12-18 05:25:54.196543: attempt ATT-LRN-000021-000243 started at 2026-01-17 05:25:54.196543 is AFTER the cutoff \u2014 must be excluded.",
+      "details": {
+        "as_of_timestamp": "2025-12-18 05:25:54.196543",
+        "attempt_id": "ATT-LRN-000021-000243",
+        "attempt_started_at": "2026-01-17 05:25:54.196543",
+        "content_id": "CNT-000069",
+        "learner_id": "LRN-000021",
+        "reason": "Mastery calculation as_of 2025-12-18 05:25:54.196543 would include attempt ATT-LRN-000021-000243 with started_at 2026-01-17 05:25:54.196543, which is AFTER the as_of cutoff (temporal leakage)."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "ATT-LRN-000021-000243",
+      "entity_type": "attempt",
+      "issue_id": "DQI-000017",
+      "reason_code": "TEMPORAL_LEAKAGE",
+      "severity": "critical",
+      "source_pk": "ATT-LRN-000021-000243",
+      "source_table": "attempt"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "MASTERY_FUTURE_ATTEMPT",
+      "description": "Mastery as_of 2026-03-26 05:47:04.767904: attempt ATT-LRN-000068-000025 started at 2026-04-25 05:47:04.767904 is AFTER the cutoff \u2014 must be excluded.",
+      "details": {
+        "as_of_timestamp": "2026-03-26 05:47:04.767904",
+        "attempt_id": "ATT-LRN-000068-000025",
+        "attempt_started_at": "2026-04-25 05:47:04.767904",
+        "content_id": "CNT-000076",
+        "learner_id": "LRN-000068",
+        "reason": "Mastery calculation as_of 2026-03-26 05:47:04.767904 would include attempt ATT-LRN-000068-000025 with started_at 2026-04-25 05:47:04.767904, which is AFTER the as_of cutoff (temporal leakage)."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "ATT-LRN-000068-000025",
+      "entity_type": "attempt",
+      "issue_id": "DQI-000018",
+      "reason_code": "TEMPORAL_LEAKAGE",
+      "severity": "critical",
+      "source_pk": "ATT-LRN-000068-000025",
+      "source_table": "attempt"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "MASTERY_FUTURE_ATTEMPT",
+      "description": "Mastery as_of 2025-09-02 13:59:27.819211: attempt ATT-LRN-000021-000103 started at 2025-10-02 13:59:27.819211 is AFTER the cutoff \u2014 must be excluded.",
+      "details": {
+        "as_of_timestamp": "2025-09-02 13:59:27.819211",
+        "attempt_id": "ATT-LRN-000021-000103",
+        "attempt_started_at": "2025-10-02 13:59:27.819211",
+        "content_id": "CNT-000021",
+        "learner_id": "LRN-000021",
+        "reason": "Mastery calculation as_of 2025-09-02 13:59:27.819211 would include attempt ATT-LRN-000021-000103 with started_at 2025-10-02 13:59:27.819211, which is AFTER the as_of cutoff (temporal leakage)."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "ATT-LRN-000021-000103",
+      "entity_type": "attempt",
+      "issue_id": "DQI-000019",
+      "reason_code": "TEMPORAL_LEAKAGE",
+      "severity": "critical",
+      "source_pk": "ATT-LRN-000021-000103",
+      "source_table": "attempt"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "MASTERY_FUTURE_ATTEMPT",
+      "description": "Mastery as_of 2025-09-06 12:00:15.437745: attempt ATT-LRN-000075-000073 started at 2025-10-06 12:00:15.437745 is AFTER the cutoff \u2014 must be excluded.",
+      "details": {
+        "as_of_timestamp": "2025-09-06 12:00:15.437745",
+        "attempt_id": "ATT-LRN-000075-000073",
+        "attempt_started_at": "2025-10-06 12:00:15.437745",
+        "content_id": "CNT-000003",
+        "learner_id": "LRN-000075",
+        "reason": "Mastery calculation as_of 2025-09-06 12:00:15.437745 would include attempt ATT-LRN-000075-000073 with started_at 2025-10-06 12:00:15.437745, which is AFTER the as_of cutoff (temporal leakage)."
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "ATT-LRN-000075-000073",
+      "entity_type": "attempt",
+      "issue_id": "DQI-000020",
+      "reason_code": "TEMPORAL_LEAKAGE",
+      "severity": "critical",
+      "source_pk": "ATT-LRN-000075-000073",
+      "source_table": "attempt"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "PATH_LOOP_NO_PROGRESS",
+      "description": "Path PATH-2025-000021 for learner LRN-000080 has repeated content without score improvement.",
+      "details": {
+        "course_id": "CRS-000003",
+        "learner_id": "LRN-000080",
+        "path_id": "PATH-2025-000021",
+        "path_items": [
+          {
+            "content_id": "CNT-000035",
+            "lpi_id": "LPI-000021",
+            "position": 1,
+            "score": 45.0,
+            "status": "completed"
+          },
+          {
+            "content_id": "CNT-000002",
+            "lpi_id": "LPI-001021",
+            "position": 2,
+            "score": 50.0,
+            "status": "completed"
+          },
+          {
+            "content_id": "CNT-000035",
+            "lpi_id": "LPI-002021",
+            "position": 3,
+            "score": 44.0,
+            "status": "completed"
+          }
+        ],
+        "positions": [
+          1,
+          3
+        ],
+        "reason": "Learning path PATH-2025-000021 for learner LRN-000080 contains content CNT-000035 at positions 1 and 3 with no score improvement (45.0 \u2192 44.0). Possible loop without progress.",
+        "repeated_content_id": "CNT-000035",
+        "scores": [
+          45.0,
+          44.0
+        ]
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "PATH-2025-000021",
+      "entity_type": "learning_path",
+      "issue_id": "DQI-000021",
+      "reason_code": "LOOP_WITHOUT_PROGRESS",
+      "severity": "medium",
+      "source_pk": "PATH-2025-000021",
+      "source_table": "learning_path"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "PATH_LOOP_NO_PROGRESS",
+      "description": "Path PATH-2025-000022 for learner LRN-000094 has repeated content without score improvement.",
+      "details": {
+        "course_id": "CRS-000003",
+        "learner_id": "LRN-000094",
+        "path_id": "PATH-2025-000022",
+        "path_items": [
+          {
+            "content_id": "CNT-000019",
+            "lpi_id": "LPI-000022",
+            "position": 1,
+            "score": 45.0,
+            "status": "completed"
+          },
+          {
+            "content_id": "CNT-000002",
+            "lpi_id": "LPI-001022",
+            "position": 2,
+            "score": 50.0,
+            "status": "completed"
+          },
+          {
+            "content_id": "CNT-000019",
+            "lpi_id": "LPI-002022",
+            "position": 3,
+            "score": 44.0,
+            "status": "completed"
+          }
+        ],
+        "positions": [
+          1,
+          3
+        ],
+        "reason": "Learning path PATH-2025-000022 for learner LRN-000094 contains content CNT-000019 at positions 1 and 3 with no score improvement (45.0 \u2192 44.0). Possible loop without progress.",
+        "repeated_content_id": "CNT-000019",
+        "scores": [
+          45.0,
+          44.0
+        ]
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "PATH-2025-000022",
+      "entity_type": "learning_path",
+      "issue_id": "DQI-000022",
+      "reason_code": "LOOP_WITHOUT_PROGRESS",
+      "severity": "medium",
+      "source_pk": "PATH-2025-000022",
+      "source_table": "learning_path"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "PATH_LOOP_NO_PROGRESS",
+      "description": "Path PATH-2025-000023 for learner LRN-000018 has repeated content without score improvement.",
+      "details": {
+        "course_id": "CRS-000008",
+        "learner_id": "LRN-000018",
+        "path_id": "PATH-2025-000023",
+        "path_items": [
+          {
+            "content_id": "CNT-000064",
+            "lpi_id": "LPI-000023",
+            "position": 1,
+            "score": 45.0,
+            "status": "completed"
+          },
+          {
+            "content_id": "CNT-000002",
+            "lpi_id": "LPI-001023",
+            "position": 2,
+            "score": 50.0,
+            "status": "completed"
+          },
+          {
+            "content_id": "CNT-000064",
+            "lpi_id": "LPI-002023",
+            "position": 3,
+            "score": 44.0,
+            "status": "completed"
+          }
+        ],
+        "positions": [
+          1,
+          3
+        ],
+        "reason": "Learning path PATH-2025-000023 for learner LRN-000018 contains content CNT-000064 at positions 1 and 3 with no score improvement (45.0 \u2192 44.0). Possible loop without progress.",
+        "repeated_content_id": "CNT-000064",
+        "scores": [
+          45.0,
+          44.0
+        ]
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "PATH-2025-000023",
+      "entity_type": "learning_path",
+      "issue_id": "DQI-000023",
+      "reason_code": "LOOP_WITHOUT_PROGRESS",
+      "severity": "medium",
+      "source_pk": "PATH-2025-000023",
+      "source_table": "learning_path"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "PATH_LOOP_NO_PROGRESS",
+      "description": "Path PATH-2025-000024 for learner LRN-000073 has repeated content without score improvement.",
+      "details": {
+        "course_id": "CRS-000005",
+        "learner_id": "LRN-000073",
+        "path_id": "PATH-2025-000024",
+        "path_items": [
+          {
+            "content_id": "CNT-000037",
+            "lpi_id": "LPI-000024",
+            "position": 1,
+            "score": 45.0,
+            "status": "completed"
+          },
+          {
+            "content_id": "CNT-000002",
+            "lpi_id": "LPI-001024",
+            "position": 2,
+            "score": 50.0,
+            "status": "completed"
+          },
+          {
+            "content_id": "CNT-000037",
+            "lpi_id": "LPI-002024",
+            "position": 3,
+            "score": 44.0,
+            "status": "completed"
+          }
+        ],
+        "positions": [
+          1,
+          3
+        ],
+        "reason": "Learning path PATH-2025-000024 for learner LRN-000073 contains content CNT-000037 at positions 1 and 3 with no score improvement (45.0 \u2192 44.0). Possible loop without progress.",
+        "repeated_content_id": "CNT-000037",
+        "scores": [
+          45.0,
+          44.0
+        ]
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "PATH-2025-000024",
+      "entity_type": "learning_path",
+      "issue_id": "DQI-000024",
+      "reason_code": "LOOP_WITHOUT_PROGRESS",
+      "severity": "medium",
+      "source_pk": "PATH-2025-000024",
+      "source_table": "learning_path"
+    },
+    {
+      "affected_record_reference": "",
+      "anomaly_type": "PATH_LOOP_NO_PROGRESS",
+      "description": "Path PATH-2025-000025 for learner LRN-000016 has repeated content without score improvement.",
+      "details": {
+        "course_id": "CRS-000008",
+        "learner_id": "LRN-000016",
+        "path_id": "PATH-2025-000025",
+        "path_items": [
+          {
+            "content_id": "CNT-000056",
+            "lpi_id": "LPI-000025",
+            "position": 1,
+            "score": 45.0,
+            "status": "completed"
+          },
+          {
+            "content_id": "CNT-000002",
+            "lpi_id": "LPI-001025",
+            "position": 2,
+            "score": 50.0,
+            "status": "completed"
+          },
+          {
+            "content_id": "CNT-000056",
+            "lpi_id": "LPI-002025",
+            "position": 3,
+            "score": 44.0,
+            "status": "completed"
+          }
+        ],
+        "positions": [
+          1,
+          3
+        ],
+        "reason": "Learning path PATH-2025-000025 for learner LRN-000016 contains content CNT-000056 at positions 1 and 3 with no score improvement (45.0 \u2192 44.0). Possible loop without progress.",
+        "repeated_content_id": "CNT-000056",
+        "scores": [
+          45.0,
+          44.0
+        ]
+      },
+      "detected_at": "2026-10-30 10:05:46.867006",
+      "detection_status": "detected",
+      "entity_id": "PATH-2025-000025",
+      "entity_type": "learning_path",
+      "issue_id": "DQI-000025",
+      "reason_code": "LOOP_WITHOUT_PROGRESS",
+      "severity": "medium",
+      "source_pk": "PATH-2025-000025",
+      "source_table": "learning_path"
+    }
+  ],
+  "profile": "dev",
+  "total_anomalous": 25,
+  "total_inspected": 25,
+  "total_valid": 0
+}

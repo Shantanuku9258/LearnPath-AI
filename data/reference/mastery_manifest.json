@@ -1,0 +1,19 @@
+{
+  "as_of_timestamp": "2026-10-22 23:59:59.000000",
+  "checksums": {
+    "mastery_snapshots.csv": "b9c076d62215d6b9d1f06a8a3b2dabc9954e87ec7c96105d9e202f5bf50ebc4f"
+  },
+  "checksums_sha256": {
+    "mastery_snapshots.csv": "b9c076d62215d6b9d1f06a8a3b2dabc9954e87ec7c96105d9e202f5bf50ebc4f"
+  },
+  "dataset_profile": "full",
+  "files": [
+    "mastery_snapshots.csv"
+  ],
+  "generator_version": "mastery-v1",
+  "row_counts": {
+    "mastery_snapshots.csv": 638203
+  },
+  "seed": 20261022,
+  "timestamp_policy": "as_of_timestamp represents the point in time of decision. evidence_cutoff_ts represents the latest event timestamp included (evidence_cutoff_ts <= as_of_timestamp). All timestamps are deterministic UTC."
+}
