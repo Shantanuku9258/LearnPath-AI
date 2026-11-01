@@ -208,16 +208,27 @@ Quarantined records are isolated into `data/quarantine/dev/` and verified with 1
 ## 9. Mastery Calculation & Evidence Policy (Phase 5)
 
 Mastery represents an explainable, time-decayed aggregate of student assessment outcomes:
+
 1. **Exponential Recency Decay:**
+
    $$
    \text{decay} = \exp\left(-\frac{\ln(2) \cdot \Delta t}{\text{half\_life\_seconds}}\right)
    $$
-   where half-life is configured to 90 days (`7,776,000` seconds).
+
+   Where half-life is configured to 90 days (`7,776,000` seconds).
+
 2. **Skill Mapping Weight:** Weighted by the primary/secondary strength $w_{cs} \in (0.0, 1.0]$.
+
 3. **Credibility Regularization:**
-   $$\text{credibility} = \frac{n_{\text{evidence}}}{n_{\text{evidence}} + 1.0}$$
-   Prevents single-attempt flukes from manufacturing unwarranted perfect mastery ($1.0$).
-4. **Cold-Start Learners:** Assigned an explicit baseline mastery of $0.0000$.
+
+   $$
+   \text{credibility} = \frac{n_{\text{evidence}}}{n_{\text{evidence}} + 1.0}
+   $$
+
+   Prevents single-attempt flukes from manufacturing unwarranted perfect mastery (`1.0`).
+
+4. **Cold-Start Learners:** Assigned an explicit baseline mastery of `0.0000`.
+
 5. **Leakage Guard:** Database CHECK constraint `ck_mastery_no_future` strictly prohibits any evidence dated after `as_of_timestamp`.
 
 ---
